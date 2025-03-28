@@ -7,6 +7,8 @@
     "start": "vite --host --open",
     "build:prod": "vite build --base=/game-hub/",
     "build:dev": "vite build",
+    "predeploy": "npm run build:prod",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "lint:format": "prettier --write --loglevel warn \"./**/*.{js,jsx,ts,tsx,css,md,json}\"",
     "lint:fix": "eslint --cache ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore "
@@ -40,6 +42,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.3.0",
     "nanoid": "^4.0.2",
     "prettier": "^2.8.8",
     "react-hook-form": "^7.45.1",
