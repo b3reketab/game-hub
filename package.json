@@ -1,26 +1,10 @@
 {
-  "name": "breakfast bar",
+  "name": "game-hub",
   "version": "1.0.0",
-  "description": "",
-  "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack-dev-server --open",
-    "server": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "css-loader": "^6.8.1",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "html-webpack-plugin": "^5.5.4",
-    "webpack-dev-middleware": "^6.1.1"
+    "client:i": "cd client && npm install",
+    "server:i": "cd server && npm install",
+    "client": "cd client && yarn start",
+    "server": "cd server && yarn dev"
   }
 }
