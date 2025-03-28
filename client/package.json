@@ -5,9 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite --host --open",
-    "build:prod": "vite build --base=/game-hub/",
-    "build:dev": "vite build",
-    "predeploy": "npm run build:prod",
+    "build": "vite build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "lint:format": "prettier --write --loglevel warn \"./**/*.{js,jsx,ts,tsx,css,md,json}\"",

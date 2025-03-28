@@ -5,6 +5,7 @@
     "client:i": "cd client && npm install",
     "server:i": "cd server && npm install",
     "client": "cd client && yarn start",
-    "server": "cd server && yarn dev"
+    "server": "cd server && yarn dev",
+    "deploy": "cd client && npm run build && npm run deploy"
   }
 }
