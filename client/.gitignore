@@ -1,0 +1,18 @@
+# dependencies
+node_modules
+
+# production
+/build
+/dist
+.firebase
+*.log
+.eslintcache
+
+._*
+
+# misc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production
